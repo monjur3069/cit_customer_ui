@@ -16,8 +16,8 @@ class AddRequestScreen extends StatelessWidget {
         backgroundColor: primaryColor,
         surfaceTintColor: Colors.transparent,
         leading: IconButton(onPressed: ()=> Get.back(), icon: const Icon(Icons.arrow_back_ios,color: primaryWhite,)),
-        title: const CommonTextWidget(
-          text: 'Add Order Request',
+        title: CommonTextWidget(
+          text: '${controller.title} Order Request',
           fontColor: Colors.white,
           fontWeight: FontWeight.w600,
           fontSize: 16,

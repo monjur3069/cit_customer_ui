@@ -1,7 +1,9 @@
+import 'package:cit_customer/routes/routes_name.dart';
 import 'package:cit_customer/utils/const_data.dart';
 import 'package:cit_customer/view/common_widgets/CommonTextWidget.dart';
 import 'package:cit_customer/view/screens/request/widgets/bottom_sheet_request.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 Card buildRequestScreenListViewItems(int index,BuildContext context) {
   return Card(
@@ -83,7 +85,7 @@ Card buildRequestScreenListViewItems(int index,BuildContext context) {
               };
               break;
             case 2:
-
+              Get.toNamed(Routes.addRequestRoute,arguments: 'Update');
               break;
 
             case 3:

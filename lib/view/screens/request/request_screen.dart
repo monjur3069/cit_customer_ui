@@ -16,7 +16,7 @@ class RequestScreen extends StatelessWidget {
         backgroundColor: primaryColor,
         surfaceTintColor: Colors.transparent,
         title: const CommonTextWidget(
-          text: 'All Request',
+          text: 'All Order Request',
           fontColor: Colors.white,
           fontWeight: FontWeight.w600,
           fontSize: 16,
@@ -24,7 +24,7 @@ class RequestScreen extends StatelessWidget {
         centerTitle: true,
         actions: [
           IconButton(
-              onPressed: ()=> Get.toNamed(Routes.addRequestRoute),
+              onPressed: ()=> Get.toNamed(Routes.addRequestRoute,arguments: 'Add'),
               icon: const Icon(
                 Icons.add,
                 color: primaryWhite,

@@ -53,7 +53,7 @@ class ProfileController extends GetxController{
     await picker.pickImage(source: imageSource, imageQuality: 25);
     if (pickedFile != null) {
       image = File(pickedFile.path);
-      imgUrl.value = "0";
+      imgUrl.value = pickedFile.path; // Set imgUrl to the path of the selected image
     }
   }
 

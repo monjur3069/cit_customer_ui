@@ -6,7 +6,7 @@ class AddRequestController extends GetxController{
   TextEditingController orderTitleController = TextEditingController();
   TextEditingController orderDescriptionController = TextEditingController();
   final formKey = GlobalKey<FormState>();
-
+  late String title;
   onSubmit () async{
     if (!await ConnectionChecker.checkConnection()) {
       Get.snackbar("You are Offline !!",
@@ -19,6 +19,13 @@ class AddRequestController extends GetxController{
     if(!formKey.currentState!.validate()){
       return;
     }
+  }
+
+  @override
+  void onInit() {
+    title = Get.arguments.toString();
+    print(title);
+    super.onInit();
   }
 
   @override
