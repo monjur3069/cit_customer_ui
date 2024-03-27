@@ -1,6 +1,7 @@
 
 import 'package:cit_customer/routes/routes.dart';
 import 'package:cit_customer/routes/routes_name.dart';
+import 'package:cit_customer/view/screens/dashboard/dashboard_screen.dart';
 import 'package:cit_customer/view/screens/profile/profile_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -19,6 +20,7 @@ void main() async {
     ..indicatorType = EasyLoadingIndicatorType.fadingGrid
     ..dismissOnTap = false;
   WidgetsFlutterBinding.ensureInitialized();
+
   SystemChrome.setPreferredOrientations(
       [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]).then(
         (_) => runApp(const MyApp()),
@@ -34,8 +36,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       getPages: AppRoute.pages,
       builder: EasyLoading.init(),
-      initialRoute: Routes.splashRoute,
-      // home: const ProfileScreen(),
+      // initialRoute: Routes.splashRoute,
+      home: const DashboardScreen(),
     );
   }
 }
+

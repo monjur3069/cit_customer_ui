@@ -5,9 +5,15 @@ import 'package:cit_customer/view/screens/add_request/add_request_controller.dar
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class AddRequestScreen extends StatelessWidget {
+class AddRequestScreen extends StatefulWidget {
   const AddRequestScreen({super.key});
 
+  @override
+  State<AddRequestScreen> createState() => _AddRequestScreenState();
+}
+
+class _AddRequestScreenState extends State<AddRequestScreen> {
+  int _maxLines = 1;
   @override
   Widget build(BuildContext context) {
     var controller = Get.find<AddRequestController>();
@@ -41,7 +47,8 @@ class AddRequestScreen extends StatelessWidget {
               ],
             ),
             const SizedBox(height: 10,),
-            CommonTextFormField(hintText: 'Write order title here', controller: controller.orderTitleController),
+            // CommonTextFormField(hintText: 'Write order title here', controller: controller.orderTitleController,maxLine: 2,),
+
             const SizedBox(height: 20,),
 
 

@@ -47,10 +47,10 @@ class ProfileScreen extends StatelessWidget {
                                 end: Alignment.bottomRight,
                                 stops: const [0.1, 0.5, 0.7, 0.9],
                                 colors: [
-                                  Colors.blue.shade800,
-                                  Colors.blue.shade700,
-                                  Colors.blue.shade600,
-                                  Colors.blue.shade400,
+                                  Color(0xfF4ec9df),
+                                  Color(0xff63a1d0),
+                                  Color(0xff3576a7),
+                                  Color(0xff344986),
                                 ],
                               ),
                             ),
@@ -375,14 +375,14 @@ class ProfileScreen extends StatelessWidget {
                                 margin: const EdgeInsets.symmetric(vertical: 15),
                                 decoration: BoxDecoration(
                                   gradient: LinearGradient(
-                                    begin: Alignment.topLeft,
-                                    end: Alignment.bottomRight,
-                                    stops: const [0.1, 0.5, 0.5, 0.9],
+                                    begin: Alignment.topRight,
+                                    end: Alignment.bottomLeft,
+                                    stops: const [0.1, 0.5, 0.7, 0.9],
                                     colors: [
-                                      Colors.blue.shade800,
-                                      Colors.blue.shade700,
-                                      Colors.blue.shade600,
-                                      Colors.blue.shade400,
+                                      Color(0xfF4ec9df),
+                                      Color(0xff63a1d0),
+                                      Color(0xff3576a7),
+                                      Color(0xff344986),
                                     ],
                                   ),
                                   borderRadius:

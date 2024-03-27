@@ -33,12 +33,12 @@ class HomeScreen extends StatelessWidget {
                   )),
             ),
             title: const Text(
-              'Classic IT & Sky Mart',
+              'Monjur Ahmed Akash',
               style: TextStyle(
                   color: primaryWhite, fontWeight: FontWeight.w600),
             ),
             subtitle: const Text(
-              'Software Company',
+              'Flutter Developer',
               style: TextStyle(
                   color: primaryWhite, fontWeight: FontWeight.w400),
             ),
